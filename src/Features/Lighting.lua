@@ -16,8 +16,14 @@ LightingFeature.__index = LightingFeature
 
 local remote = ReplicatedStorage.Remotes.Features.ChangeLighting
 
---- @class Lighting
---- This is a MapLib Feature. It can be accessed by `MapLib:GetFeature("Lighting")`.
+---@class Lighting
+---This is a MapLib Feature. It can be accessed by `MapLib:GetFeature("Lighting")`.
+--[=[
+	:::warning
+		WARNING! This is an advanced feature.
+		This page assumes you are familiar, comfortable and can write Luau code.
+	:::
+]=]
 
 function LightingFeature.new(MapLib)
 	local self = setmetatable({}, LightingFeature)
